@@ -1,0 +1,11 @@
+package:
+    type:           yii2-extension
+    name:           yii2-error-notifier
+    title:          Error Notifier for Yii2
+    keywords:       yii2, error notifier
+    namespace:      hiqdev\yii2\errorNotifier
+    description:    |
+        Provides:
+
+        - Notifications for system administrators for uncaught exceptions and other errors
+        - Ability for user to leave message for system administrators on the error page

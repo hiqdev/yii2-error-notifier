@@ -1,6 +1,6 @@
 <?php
 
-return [
+return array_filter([
     'components' => [
         'log' => [
             'targets' => [
@@ -22,4 +22,9 @@ return [
             ],
         ],
     ],
-];
+    'bootstrap' => defined('YII_DEBUG') && YII_DEBUG && empty($params['errorNotifier']['email']['from']) ? [
+        'yii2-error-notifier-warning' => function () {
+            Yii::warning('Error notifier not configured');
+        }
+    ] : null,
+]);

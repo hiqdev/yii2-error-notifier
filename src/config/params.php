@@ -4,8 +4,8 @@ return [
     'errorNotifier' => [
         'email' => [
             'subject' => 'Error Log',
-            'from' => null,
-            'to' => null,
+            'from' => $params['supportEmail'],
+            'to' => $params['supportEmail'],
         ]
     ]
 ];

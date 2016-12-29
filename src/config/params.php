@@ -2,10 +2,11 @@
 
 return [
     'errorNotifier' => [
+        'log.subject' => 'Error Log',
+        'feedback.subject' => 'Error feedback',
         'email' => [
-            'subject' => 'Error Log',
             'from' => null,
             'to' => null,
-        ]
+        ],
     ]
 ];

@@ -1,4 +1,12 @@
 <?php
+/**
+ * Error Notifier for Yii2
+ *
+ * @link      https://github.com/hiqdev/yii2-error-notifier
+ * @package   yii2-error-notifier
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ */
 
 namespace hiqdev\yii2\errorNotifier\logic;
 
@@ -8,8 +16,6 @@ use Yii;
 /**
  * Class DebugSessionSaver is designed to save debug session result to a separate
  * directory to prevent valuable debug data from deleting with GC.
- *
- * @package hiqdev\yii2\errorNotifier\logic
  */
 class DebugSessionSaver
 {

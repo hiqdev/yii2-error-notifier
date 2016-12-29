@@ -9,7 +9,6 @@ use yii\web\JsExpression;
 /** @var $message string */
 /** @var $exception Exception */
 /** @var $model \hiqdev\yii2\errorNotifier\models\FeedbackForm */
-
 $this->title = $name;
 
 ?>
@@ -33,7 +32,7 @@ $this->title = $name;
         <div class="col-md-5 problem-report-form">
             <?= Html::button(Yii::t('error-notifier', 'Report this problem'), [
                 'class' => 'btn btn-warning report',
-                'onclick' => new JsExpression("$(this).hide();$('#problem-report-form').show()")
+                'onclick' => new JsExpression("$(this).hide();$('#problem-report-form').show()"),
             ]) ?>
 
             <?php $form = ActiveForm::begin([

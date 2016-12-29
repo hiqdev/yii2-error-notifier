@@ -1,4 +1,12 @@
 <?php
+/**
+ * Error Notifier for Yii2
+ *
+ * @link      https://github.com/hiqdev/yii2-error-notifier
+ * @package   yii2-error-notifier
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ */
 
 namespace hiqdev\yii2\errorNotifier\actions;
 
@@ -10,7 +18,7 @@ class ErrorAction extends base\ErrorAction
     protected function getViewRenderParams()
     {
         return array_merge(parent::getViewRenderParams(), [
-            'model' => $this->buildFeedbackForm()
+            'model' => $this->buildFeedbackForm(),
         ]);
     }
 

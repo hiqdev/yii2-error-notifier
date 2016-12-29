@@ -1,4 +1,12 @@
 <?php
+/**
+ * Error Notifier for Yii2
+ *
+ * @link      https://github.com/hiqdev/yii2-error-notifier
+ * @package   yii2-error-notifier
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ */
 
 namespace hiqdev\yii2\errorNotifier\actions\base;
 
@@ -66,14 +74,14 @@ class ErrorAction extends \yii\web\ErrorAction
      */
     public $defaultMessage;
     /**
-     * @var \Exception the exception object, normally is filled on [[init()]] method call.
+     * @var \Exception the exception object, normally is filled on [[init()]] method call
      * @see [[findException()]] to know default way of obtaining exception.
      * @since 2.0.11
      */
     protected $exception;
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function init()
     {
@@ -89,7 +97,7 @@ class ErrorAction extends \yii\web\ErrorAction
     }
 
     /**
-     * Runs the action
+     * Runs the action.
      *
      * @return string result content
      */
@@ -124,7 +132,7 @@ class ErrorAction extends \yii\web\ErrorAction
     }
 
     /**
-     * Builds array of parameters that will be passed to the view
+     * Builds array of parameters that will be passed to the view.
      * @return array
      * @since 2.0.11
      */
@@ -154,7 +162,7 @@ class ErrorAction extends \yii\web\ErrorAction
     }
 
     /**
-     * Gets the code from the [[exception]]
+     * Gets the code from the [[exception]].
      * @return mixed
      * @since 2.0.11
      */
@@ -168,7 +176,7 @@ class ErrorAction extends \yii\web\ErrorAction
     }
 
     /**
-     * Returns the exception name, followed by the code (if present)
+     * Returns the exception name, followed by the code (if present).
      *
      * @return string
      * @since 2.0.11

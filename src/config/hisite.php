@@ -1,4 +1,12 @@
 <?php
+/**
+ * Error Notifier for Yii2
+ *
+ * @link      https://github.com/hiqdev/yii2-error-notifier
+ * @package   yii2-error-notifier
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ */
 
 return array_filter([
     'components' => [
@@ -37,7 +45,7 @@ return array_filter([
     'bootstrap' => defined('YII_DEBUG') && YII_DEBUG && empty($params['errorNotifier']['email']['from']) ? [
         'yii2-error-notifier-warning' => function () {
             Yii::warning('Error notifier is not configured');
-        }
+        },
     ] : null,
     'modules' => [
         'error-notifier' => [

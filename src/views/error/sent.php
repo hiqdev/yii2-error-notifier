@@ -1,11 +1,10 @@
 <?php
 
 /**
- * @var \yii\web\View $this
+ * @var \yii\web\View
  * @var \hiqdev\yii2\errorNotifier\models\FeedbackForm $model
  * @var bool $success
  */
-
 ?>
 
 <?php if ($success) : ?>

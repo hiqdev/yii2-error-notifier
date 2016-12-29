@@ -1,5 +1,9 @@
 # hiqdev/yii2-error-notifier
 
+## [Under development]
+
+    - [c7e41a7] 2016-12-29 Implemented error notifications for admins [@silverfire]
+
 ## [0.0.1] - 2016-12-29
 
 - Added basics: feedback on the exception page, log target to send emails to developers
@@ -22,5 +26,6 @@
 [d0baec1]: https://github.com/hiqdev/yii2-error-notifier/commit/d0baec1
 [5b1a68d]: https://github.com/hiqdev/yii2-error-notifier/commit/5b1a68d
 [440d779]: https://github.com/hiqdev/yii2-error-notifier/commit/440d779
-[Under development]: https://github.com/hiqdev/yii2-error-notifier/releases/tag/Under development
+[Under development]: https://github.com/hiqdev/yii2-error-notifier/compare/0.0.1...HEAD
 [0.0.1]: https://github.com/hiqdev/yii2-error-notifier/releases/tag/0.0.1
+[c7e41a7]: https://github.com/hiqdev/yii2-error-notifier/commit/c7e41a7

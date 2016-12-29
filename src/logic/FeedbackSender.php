@@ -1,4 +1,12 @@
 <?php
+/**
+ * Error Notifier for Yii2
+ *
+ * @link      https://github.com/hiqdev/yii2-error-notifier
+ * @package   yii2-error-notifier
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ */
 
 namespace hiqdev\yii2\errorNotifier\logic;
 
@@ -8,7 +16,7 @@ use yii\base\Object;
 use yii\mail\MailerInterface;
 
 /**
- * Class FeedbackSender provides API to send send user feedback to the system administrators
+ * Class FeedbackSender provides API to send send user feedback to the system administrators.
  */
 class FeedbackSender extends Object
 {

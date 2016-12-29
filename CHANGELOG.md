@@ -1,7 +1,5 @@
 # hiqdev/yii2-error-notifier
 
-## [Under development]
-
 ## [0.0.1] - 2016-12-29
 
 - Added basics: feedback on the exception page, log target to send emails to developers ([@silverfire], [@hiqsol])

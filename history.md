@@ -1,5 +1,10 @@
 # hiqdev/yii2-error-notifier
 
+## [0.0.3] - 2016-12-30
+
+- Added debug session link to the report email [@silverfire]
+    - [570d53c] 2016-12-30 Added debug session link to the report email [@silverfire]
+
 ## [0.0.2] - 2016-12-30
 
 - Moved EmailTarget into module [@silverfire]
@@ -29,9 +34,11 @@
 [d0baec1]: https://github.com/hiqdev/yii2-error-notifier/commit/d0baec1
 [5b1a68d]: https://github.com/hiqdev/yii2-error-notifier/commit/5b1a68d
 [440d779]: https://github.com/hiqdev/yii2-error-notifier/commit/440d779
-[Under development]: https://github.com/hiqdev/yii2-error-notifier/compare/0.0.1...HEAD
+[Under development]: https://github.com/hiqdev/yii2-error-notifier/compare/0.0.2...HEAD
 [0.0.1]: https://github.com/hiqdev/yii2-error-notifier/releases/tag/0.0.1
 [c7e41a7]: https://github.com/hiqdev/yii2-error-notifier/commit/c7e41a7
 [fa8f3d7]: https://github.com/hiqdev/yii2-error-notifier/commit/fa8f3d7
 [3981ea3]: https://github.com/hiqdev/yii2-error-notifier/commit/3981ea3
 [0.0.2]: https://github.com/hiqdev/yii2-error-notifier/compare/0.0.1...0.0.2
+[570d53c]: https://github.com/hiqdev/yii2-error-notifier/commit/570d53c
+[0.0.3]: https://github.com/hiqdev/yii2-error-notifier/compare/0.0.2...0.0.3

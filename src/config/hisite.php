@@ -25,7 +25,7 @@ return array_filter([
         'log' => [
             'targets' => [
                 'email-error-notifications' => [
-                    'class' => \hipanel\log\EmailTarget::class,
+                    'class' => hiqdev\yii2\errorNotifier\targets\EmailTarget::class,
                     'levels' => ['error'],
                     'message' => [
                         'from' => isset($params['errorNotifier']['email']['from'])
@@ -35,7 +35,7 @@ return array_filter([
                             ? $params['errorNotifier']['email']['to']
                             : $params['adminEmail'],
                         'subject' => isset($params['errorNotifier']['log.subject'])
-                            ? $params['errorNotifier']['feedback.subject']
+                            ? $params['errorNotifier']['log.subject']
                             : null,
                     ],
                 ],

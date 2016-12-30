@@ -15,11 +15,10 @@
 <?php endif ?>
 <br />
 <?php if ($form->session_tag) : ?>
-    <?= Yii::t('error-notifier', 'Related debug session tag: {tag}', ['tag' => $form->session_tag]) ?>
+    <?= Yii::t('error-notifier', 'See related debug session log: {url}', ['url' => $form->getDebugSessionUrl()]) ?>
+    <br />
+    <?= Yii::t('error-notifier', 'The link may be invalidated by the GC, but this session is saved to a backup directory. Session tag: {tag}', ['tag' => $form->session_tag]) ?>
 <?php endif ?>
-
-<br />
-
 
 <br />
 <br />

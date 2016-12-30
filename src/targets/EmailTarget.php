@@ -10,6 +10,7 @@
 
 namespace hiqdev\yii2\errorNotifier\targets;
 
+use hiqdev\yii2\errorNotifier\models\FeedbackForm;
 use Yii;
 
 class EmailTarget extends \yii\log\EmailTarget
@@ -36,11 +37,8 @@ class EmailTarget extends \yii\log\EmailTarget
             return '';
         }
 
-        $url = Yii::$app->getUrlManager()->createAbsoluteUrl([
-            '/debug/default/view',
-            'panel' => 'log',
-            'tag' => Yii::$app->getModule('debug')->logTarget->tag,
-        ]);
+        $form = new FeedbackForm(['session_tag' => Yii::$app->getModule('debug')->logTarget->tag]);
+        $url = $form->getDebugSessionUrl();
 
         return "See debug log: $url\n\n";
     }

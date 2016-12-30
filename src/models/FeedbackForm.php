@@ -50,4 +50,17 @@ class FeedbackForm extends Model
             [['session_tag'], 'safe'],
         ];
     }
+
+    public function getDebugSessionUrl()
+    {
+        if (empty($this->session_tag) || !Yii::$app->hasModule('debug')) {
+            return null;
+        }
+
+        return Yii::$app->getUrlManager()->createAbsoluteUrl([
+            '/debug/default/view',
+            'panel' => 'log',
+            'tag' => $this->session_tag,
+        ]);
+    }
 }

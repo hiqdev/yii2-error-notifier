@@ -13,7 +13,7 @@ namespace hiqdev\yii2\errorNotifier\actions;
 use hiqdev\yii2\errorNotifier\models\FeedbackForm;
 use Yii;
 
-class ErrorAction extends base\ErrorAction
+class ErrorAction extends \yii\web\ErrorAction
 {
     protected function getViewRenderParams()
     {

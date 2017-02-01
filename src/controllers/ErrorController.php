@@ -56,4 +56,10 @@ class ErrorController extends Controller
 
         return $this->redirect(Yii::$app->getHomeUrl());
     }
+
+    public function actionTest()
+    {
+        Yii::error('testing error');
+        throw new \Exception('testing exception');
+    }
 }

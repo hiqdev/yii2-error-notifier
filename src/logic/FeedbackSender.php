@@ -10,6 +10,7 @@
 
 namespace hiqdev\yii2\errorNotifier\logic;
 
+use hiqdev\yii2\errorNotifier\Module;
 use hiqdev\yii2\errorNotifier\models\FeedbackForm;
 use yii\base\InvalidConfigException;
 use yii\base\Object;
@@ -78,11 +79,13 @@ class FeedbackSender extends Object
      */
     public function send()
     {
+        $module = Module::getInstance();
+
         return $this->mailer
             ->compose($this->view, ['form' => $this->feedbackForm])
-            ->setFrom($this->from)
-            ->setTo($this->to)
-            ->setSubject($this->subject)
+            ->setFrom($module->flagEmail($this->from))
+            ->setTo($module->flagEmail($this->to))
+            ->setSubject($module->flagText($this->subject))
             ->send();
     }
 }

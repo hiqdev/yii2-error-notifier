@@ -50,6 +50,7 @@ return array_filter([
     'modules' => [
         'error-notifier' => [
             'class' => \hiqdev\yii2\errorNotifier\Module::class,
+            'flagDomainName' => $params['errorNotifier']['flagDomainName'],
         ],
     ],
     'container' => [

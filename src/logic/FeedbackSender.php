@@ -5,13 +5,13 @@
  * @link      https://github.com/hiqdev/yii2-error-notifier
  * @package   yii2-error-notifier
  * @license   BSD-3-Clause
- * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ * @copyright Copyright (c) 2016-2017, HiQDev (http://hiqdev.com/)
  */
 
 namespace hiqdev\yii2\errorNotifier\logic;
 
-use hiqdev\yii2\errorNotifier\Module;
 use hiqdev\yii2\errorNotifier\models\FeedbackForm;
+use hiqdev\yii2\errorNotifier\Module;
 use yii\base\InvalidConfigException;
 use yii\base\Object;
 use yii\mail\MailerInterface;

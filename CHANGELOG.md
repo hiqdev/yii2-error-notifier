@@ -1,5 +1,10 @@
 # hiqdev/yii2-error-notifier
 
+## [0.0.5] - 2017-02-21
+
+- Renamed parameter `flagWithDomain` <- flagDomainName ([@hiqsol])
+- Removed flagging email `To` address ([@hiqsol])
+
 ## [0.0.4] - 2017-02-03
 
 - Added flagging email `to`, `from` and `subject` with domain name ([@hiqsol], [@SilverFire])
@@ -27,8 +32,9 @@
 [@silverfire]: https://github.com/SilverFire
 [@hiqsol]: https://github.com/hiqsol
 [sol@hiqdev.com]: https://github.com/hiqsol
-[Under development]: https://github.com/hiqdev/yii2-error-notifier/compare/0.0.3...HEAD
+[Under development]: https://github.com/hiqdev/yii2-error-notifier/compare/0.0.4...HEAD
 [0.0.1]: https://github.com/hiqdev/yii2-error-notifier/releases/tag/0.0.1
 [0.0.2]: https://github.com/hiqdev/yii2-error-notifier/compare/0.0.1...0.0.2
 [0.0.3]: https://github.com/hiqdev/yii2-error-notifier/compare/0.0.2...0.0.3
 [0.0.4]: https://github.com/hiqdev/yii2-error-notifier/compare/0.0.3...0.0.4
+[0.0.5]: https://github.com/hiqdev/yii2-error-notifier/compare/0.0.4...0.0.5

@@ -1,4 +1,12 @@
 <?php
+/**
+ * Error Notifier for Yii2
+ *
+ * @link      https://github.com/hiqdev/yii2-error-notifier
+ * @package   yii2-error-notifier
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2016-2017, HiQDev (http://hiqdev.com/)
+ */
 
 error_reporting(E_ALL & ~E_NOTICE);
 

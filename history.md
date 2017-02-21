@@ -1,5 +1,12 @@
 # hiqdev/yii2-error-notifier
 
+## [0.0.5] - 2017-02-21
+
+- Renamed parameter `flagWithDomain` <- flagDomainName
+    - [d521286] 2017-02-21 renamed `flagWithDomain` <- flagDomainName [@hiqsol]
+- Removed flagging email `To` address
+    - [4db3468] 2017-02-21 disabled flagging email `To` address [@hiqsol]
+
 ## [0.0.4] - 2017-02-03
 
 - Added flagging email `to`, `from` and `subject` with domain name
@@ -47,7 +54,7 @@
 [d0baec1]: https://github.com/hiqdev/yii2-error-notifier/commit/d0baec1
 [5b1a68d]: https://github.com/hiqdev/yii2-error-notifier/commit/5b1a68d
 [440d779]: https://github.com/hiqdev/yii2-error-notifier/commit/440d779
-[Under development]: https://github.com/hiqdev/yii2-error-notifier/compare/0.0.3...HEAD
+[Under development]: https://github.com/hiqdev/yii2-error-notifier/compare/0.0.4...HEAD
 [0.0.1]: https://github.com/hiqdev/yii2-error-notifier/releases/tag/0.0.1
 [c7e41a7]: https://github.com/hiqdev/yii2-error-notifier/commit/c7e41a7
 [fa8f3d7]: https://github.com/hiqdev/yii2-error-notifier/commit/fa8f3d7
@@ -60,3 +67,6 @@
 [5a95a5e]: https://github.com/hiqdev/yii2-error-notifier/commit/5a95a5e
 [76c68b6]: https://github.com/hiqdev/yii2-error-notifier/commit/76c68b6
 [0.0.4]: https://github.com/hiqdev/yii2-error-notifier/compare/0.0.3...0.0.4
+[d521286]: https://github.com/hiqdev/yii2-error-notifier/commit/d521286
+[4db3468]: https://github.com/hiqdev/yii2-error-notifier/commit/4db3468
+[0.0.5]: https://github.com/hiqdev/yii2-error-notifier/compare/0.0.4...0.0.5

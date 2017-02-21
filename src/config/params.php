@@ -13,7 +13,7 @@ return [
     'errorNotifier' => [
         'log.subject' => 'Error Log',
         'feedback.subject' => 'Error feedback',
-        'flagDomainName' => true,
+        'flagWithDomain' => true,
         'email' => [
             'from' => null,
             'to' => null,

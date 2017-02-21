@@ -14,11 +14,11 @@ use Yii;
 
 class Module extends \yii\base\Module
 {
-    public $flagDomainName;
+    public $flagWithDomain;
 
     public function flagEmail($email)
     {
-        if (empty($this->flagDomainName)) {
+        if (empty($this->flagWithDomain)) {
             return $email;
         }
 
@@ -29,7 +29,7 @@ class Module extends \yii\base\Module
 
     public function flagText($text, $delimiter = ' ')
     {
-        if (empty($this->flagDomainName)) {
+        if (empty($this->flagWithDomain)) {
             return $text;
         }
 

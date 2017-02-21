@@ -83,8 +83,8 @@ class FeedbackSender extends Object
 
         return $this->mailer
             ->compose($this->view, ['form' => $this->feedbackForm])
+            ->setTo($this->to)
             ->setFrom($module->flagEmail($this->from))
-            ->setTo($module->flagEmail($this->to))
             ->setSubject($module->flagText($this->subject))
             ->send();
     }

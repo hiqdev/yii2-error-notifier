@@ -28,7 +28,6 @@ class EmailTarget extends \yii\log\EmailTarget
         }
 
         $module = Module::getInstance();
-        $this->message['to'] = $module->flagEmail($this->message['to']);
         $this->message['from'] = $module->flagEmail($this->message['from']);
         $this->message['subject'] = $module->flagText($this->message['subject']);
 
